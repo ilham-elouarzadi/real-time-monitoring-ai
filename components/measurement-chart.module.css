@@ -1,0 +1,64 @@
+.chartContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Augmenter l'espacement */
+  background-color: var(--color-card-background);
+  border: 1px solid var(--color-border);
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  padding: 20px;
+}
+
+.controls {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  justify-content: flex-end; /* Aligner à droite */
+}
+
+.sensorSelect {
+  padding: 10px 15px; /* Plus de padding */
+  border: 1px solid var(--color-border);
+  border-radius: 8px; /* Plus arrondi */
+  background-color: var(--color-card-background);
+  font-size: 0.9rem;
+  color: var(--color-text-dark);
+  appearance: none; /* Supprimer le style par défaut du navigateur */
+  background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%20viewBox%3D%220%200%20292.4%20292.4%22%3E%3Cpath%20fill%3D%22%236c757d%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13.2-5.6H18.6c-5%200-9.3%201.8-13.2%205.6-3.9%203.9-5.6%208.2-5.6%2013.2s1.8%209.3%205.6%2013.2l128%20128c3.9%203.9%208.2%205.6%2013.2%205.6s9.3-1.8%2013.2-5.6l128-128c3.9-3.9%205.6-8.2%205.6-13.2s-1.8-9.3-5.6-13.2z%22%2F%3E%3C%2Fsvg%3E"); /* Flèche personnalisée */
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 12px;
+  cursor: pointer;
+}
+
+.sensorSelect:focus {
+  outline: none;
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 3px rgba(74, 144, 226, 0.2); /* Ombre de focus */
+}
+
+.chartWrapper {
+  background-color: var(--color-card-background);
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  padding: 16px;
+}
+
+.anomalyWarning {
+  display: flex;
+  align-items: center;
+  color: var(--color-danger); /* Utiliser la couleur danger */
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-top: 10px;
+  padding: 10px 15px;
+  background-color: #ffebeb; /* Fond léger pour l'alerte */
+  border: 1px solid #f5c6cb;
+  border-radius: 8px;
+}
+
+.warningIcon {
+  width: 20px; /* Légèrement plus grand */
+  height: 20px;
+  margin-right: 10px;
+}

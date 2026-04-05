@@ -1,0 +1,43 @@
+:root {
+  --color-primary: #4a90e2; /* Un bleu doux */
+  --color-secondary: #6c757d; /* Gris foncé */
+  --color-accent: #28a745; /* Vert pour le succès/connecté */
+  --color-danger: #dc3545; /* Rouge pour les alertes/erreurs */
+  --color-background: #f8f9fa; /* Arrière-plan très léger */
+  --color-card-background: #ffffff; /* Fond des cartes */
+  --color-text-dark: #212529; /* Texte foncé */
+  --color-text-light: #6c757d; /* Texte plus clair */
+  --color-border: #dee2e6; /* Bordures */
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif; /* Assurez-vous que cette police est importée ou utilisez une police système */
+  background-color: var(--color-background);
+  color: var(--color-text-dark);
+}
+
+/* Styles de base pour les éléments HTML si nécessaire, par exemple pour les titres, paragraphes */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--color-text-dark);
+}
+
+p {
+  color: var(--color-text-light);
+}
+
+a {
+  color: var(--color-primary);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}

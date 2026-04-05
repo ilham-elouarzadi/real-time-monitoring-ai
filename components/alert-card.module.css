@@ -1,0 +1,96 @@
+.card {
+  border: 1px solid #e2e8f0; /* border-border */
+  border-radius: 0.5rem; /* rounded-lg */
+  background-color: #ffffff; /* bg-card */
+  color: #020817; /* text-card-foreground */
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05); /* shadow-sm */
+  width: 100%;
+}
+
+.cardContent {
+  padding: 1rem;
+}
+
+.flexBetween {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+
+.flexGap2 {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  border-radius: 0.375rem; /* rounded-full */
+  padding: 0.25rem 0.5rem; /* px-2.5 py-0.5 */
+  font-size: 0.75rem; /* text-xs */
+  font-weight: 600; /* font-semibold */
+  text-transform: uppercase;
+  line-height: 1;
+  white-space: nowrap;
+  color: #ffffff; /* Texte blanc par défaut pour les badges de sévérité */
+}
+
+.badgeHigh {
+  background-color: #ef4444; /* bg-red-500 */
+}
+
+.badgeMedium {
+  background-color: #f97316; /* bg-orange-500 */
+}
+
+.badgeLow {
+  background-color: #22c55e; /* bg-green-500 */
+}
+
+.badgeSecondary {
+  background-color: #f1f5f9; /* bg-secondary */
+  color: #020817; /* text-secondary-foreground */
+}
+
+.badgeOutline {
+  border: 1px solid #e2e8f0; /* border-input */
+  color: #020817; /* text-foreground */
+  background-color: transparent;
+}
+
+.timestamp {
+  font-size: 0.875rem; /* text-sm */
+  color: #6b7280; /* text-gray-500 */
+}
+
+.description {
+  font-size: 0.875rem; /* text-sm */
+  color: #374151; /* text-gray-700 */
+}
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.375rem; /* rounded-md */
+  font-size: 0.875rem; /* text-sm */
+  font-weight: 500; /* font-medium */
+  height: 2.5rem; /* h-10 */
+  padding: 0 1rem; /* px-4 py-2 */
+  background-color: #ffffff; /* bg-background */
+  color: #020817; /* text-foreground */
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+  border: 1px solid #e2e8f0; /* border-input */
+}
+
+.button:hover {
+  background-color: #f1f5f9; /* hover:bg-accent */
+}
+
+.button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
