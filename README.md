@@ -31,5 +31,5 @@ Elle permet de suivre des flux de données en direct, générer des graphiques d
 
 1. **Cloner le dépôt**
 ```bash
-git clone https://github.com/<ilham-elouarzadi>/monitoring-system.git
+git clone https://github.com/<ilham-elouarzadi>/real-time-monitoring-ai.git
 cd monitoring-system
